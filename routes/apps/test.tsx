@@ -1,5 +1,4 @@
 import { Head } from "$fresh/runtime.ts";
-import Links from "../../islands/Links.tsx";
 
 export default function () {
   return (

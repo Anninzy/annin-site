@@ -11,7 +11,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $apps_test from "./routes/apps/test.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Clock from "./islands/Clock.tsx";
-import * as $Links from "./islands/Links.tsx";
+import * as $Home from "./islands/Home.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -27,7 +27,7 @@ const manifest = {
   },
   islands: {
     "./islands/Clock.tsx": $Clock,
-    "./islands/Links.tsx": $Links,
+    "./islands/Home.tsx": $Home,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
