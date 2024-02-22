@@ -2,19 +2,21 @@ import { Head } from "$fresh/runtime.ts";
 import { signal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 
-const linkCorrespondingPatternPosition = new Map();
+const linkCorrespondingPosition = new Map();
 const currentPatternPosition = signal(0);
+const currentBackgroundPosition = signal(0);
 type linkProps = {
   name: string;
 };
 
 function Link(props: linkProps) {
   useEffect(() => {
-    linkCorrespondingPatternPosition.set(props.name, 0);
+    linkCorrespondingPosition.set(props.name, 0);
   }, [])
 
   function shiftBackgroundAndPattern() {
-    currentPatternPosition.value = linkCorrespondingPatternPosition.get(props.name);
+    currentPatternPosition.value = linkCorrespondingPosition.get(props.name)[0];
+    currentBackgroundPosition.value = linkCorrespondingPosition.get(props.name)[1];
   }
 
   return (
@@ -29,12 +31,14 @@ function Link(props: linkProps) {
 
 function EndOfLinks() {
   useEffect(() => {
-    const positionOffset = 100 / linkCorrespondingPatternPosition.size
+    const amountOfLinks = linkCorrespondingPosition.size
+    const patternPositionOffset = 100 / amountOfLinks
+    const backgroundPositionOffset = 10 / amountOfLinks
     
     let iteration = 0
-    linkCorrespondingPatternPosition.forEach((value, key, map) => {
+    linkCorrespondingPosition.forEach((value, key, map) => {
       iteration++
-      map.set(key, positionOffset * iteration)
+      map.set(key, [patternPositionOffset * iteration, backgroundPositionOffset * iteration])
     })
   }, [])
   
@@ -61,7 +65,7 @@ export default function () {
           id="pattern"
           style={{ backgroundPosition: `0% -${currentPatternPosition}%` }}
         />
-        <img id="background" src="/background.jpg" />
+        <img id="background" src="/background.jpg" style={{ top: `${currentBackgroundPosition}%` }} />
       </div>
     </>
   );
