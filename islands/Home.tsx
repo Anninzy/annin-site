@@ -9,7 +9,6 @@ type linkProps = {
 };
 
 function Link(props: linkProps) {
-  console.log("link")
   useEffect(() => {
     linkCorrespondingPatternPosition.set(props.name, 0);
   }, [])
@@ -35,6 +34,7 @@ function EndOfLinks() {
   function setLinkCorrespondingPatternPosition(value, key, map) {
     iteration++
     linkCorrespondingPatternPosition.set(key, positionOffset * iteration)
+    console.log(`[${key}] = ${positionOffset * iteration}`);
   }
   linkCorrespondingPatternPosition.forEach(setLinkCorrespondingPatternPosition)
   return (<script />)
