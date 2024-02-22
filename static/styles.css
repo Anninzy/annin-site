@@ -160,7 +160,7 @@ body:has(> #menu) {
 }
 
 #menu #items:hover~#background {
-	scale: 1.1;
+	scale: 1.2;
 	opacity: 0.1;
 }
 
