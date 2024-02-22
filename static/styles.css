@@ -26,12 +26,6 @@ body {
 	height: 100%;
 	margin: 0;
 	width: 100%;
-	filter: invert(100%) hue-rotate(180deg);
-}
-
-img,
-video {
-	filter: invert(100%) hue-rotate(180deg);
 }
 
 h1,
