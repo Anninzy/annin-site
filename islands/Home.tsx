@@ -31,7 +31,8 @@ function Link(props: linkProps) {
 function EndOfLinks() {
   const positionOffset = 100 / linkCorrespondingPatternPosition.size
   let iteration = 0
-  console.log("before foreach")
+  useEffect(() => {
+    console.log("before foreach")
   console.log(linkCorrespondingPatternPosition.size)
   linkCorrespondingPatternPosition.forEach((value, key, map) => {
     console.log("function ran")
@@ -40,6 +41,8 @@ function EndOfLinks() {
     console.log(`[${key}] = ${positionOffset * iteration}`);
   })
   console.log("after foreach")
+  }, [])
+  
   
   return (<script />)
 }
