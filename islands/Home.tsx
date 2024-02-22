@@ -34,7 +34,7 @@ function EndOfLinks() {
   useEffect(() => {
     const amountOfLinks = linkCorrespondingPosition.size
     const patternPositionOffset = 100 / amountOfLinks
-    const backgroundPositionOffset = 5 / amountOfLinks
+    const backgroundPositionOffset = 10 / amountOfLinks
     
     let iteration = 0
     linkCorrespondingPosition.forEach((value, key, map) => {
