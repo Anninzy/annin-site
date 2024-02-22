@@ -29,14 +29,12 @@ function Link(props: linkProps) {
 
 function EndOfLinks() {
   const positionOffset = 100 / linkCorrespondingPatternPosition.size
+  console.log(linkCorrespondingPatternPosition.size)
   let iteration = 0
   useEffect(() => {
     linkCorrespondingPatternPosition.forEach((value, key, map) => {
       iteration++
-      console.log(positionOffset)
-      console.log(iteration)
       map.set(key, positionOffset * iteration)
-      console.log(`[${key}] = ${positionOffset * iteration}`);
     })
   }, [])
   
