@@ -17,6 +17,7 @@ function Link(props: linkProps) {
   function shiftBackgroundAndPattern() {
     currentPatternPosition.value = linkCorrespondingPosition.get(props.name)[0];
     currentBackgroundPosition.value = linkCorrespondingPosition.get(props.name)[1];
+    console.log(currentBackgroundPosition.value)
   }
 
   return (
@@ -39,6 +40,7 @@ function EndOfLinks() {
     linkCorrespondingPosition.forEach((value, key, map) => {
       iteration++
       map.set(key, [patternPositionOffset * iteration, backgroundPositionOffset * iteration])
+      console.log(backgroundPositionOffset * iteration)
     })
   }, [])
   
