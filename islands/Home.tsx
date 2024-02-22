@@ -46,6 +46,7 @@ export default function () {
           <Link name="Blog" />
           <Link name="Portfolio" />
           <Link name="About" />
+          <EndOfLinks />
         </div>
 
         <div
