@@ -30,8 +30,9 @@ function Link(props: linkProps) {
 function EndOfLinks() {
   // for link 1, linkPositions.set(link1, positionOffset), link 2, linkPositions.set(link2, positionOffset * 2), and so on
   const positionOffset = 100 / linkCorrespondingPatternPosition.size
+  let iteration = 1
   function setLinkCorrespondingPatternPosition(value, key, map) {
-    
+    linkCorrespondingPatternPosition.set(key, positionOffset * iteration)
   }
   linkCorrespondingPatternPosition.forEach(setLinkCorrespondingPatternPosition)
   return (<script />)
