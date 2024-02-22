@@ -4,7 +4,7 @@ import { useEffect } from "preact/hooks";
 
 const linkCorrespondingPosition = new Map();
 const currentPatternPosition = signal(0);
-const currentBackgroundPosition = signal(0);
+const currentBackgroundPosition = signal(-10);
 type linkProps = {
   name: string;
 };
