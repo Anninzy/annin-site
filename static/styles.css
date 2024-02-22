@@ -111,6 +111,7 @@ body:has(> #menu) {
 }
 
 #menu #background {
+	top: 0;
 	object-fit: cover;
 	scale: 1.2;
 	height: 100%;
