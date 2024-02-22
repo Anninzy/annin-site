@@ -11,7 +11,6 @@ type linkProps = {
 function Link(props: linkProps) {
   useEffect(() => {
     linkCorrespondingPatternPosition.set(props.name, 0);
-    console.log("map set")
   }, [])
 
   function shiftBackgroundAndPattern() {
@@ -32,17 +31,14 @@ function EndOfLinks() {
   const positionOffset = 100 / linkCorrespondingPatternPosition.size
   let iteration = 0
   useEffect(() => {
-    console.log("before foreach")
-  console.log(linkCorrespondingPatternPosition.size)
-  linkCorrespondingPatternPosition.forEach((value, key, map) => {
-    console.log("function ran")
-    iteration++
-    map.set(key, positionOffset * iteration)
-    console.log(`[${key}] = ${positionOffset * iteration}`);
-  })
-  console.log("after foreach")
+    linkCorrespondingPatternPosition.forEach((value, key, map) => {
+      iteration++
+      console.log(positionOffset)
+      console.log(iteration)
+      map.set(key, positionOffset * iteration)
+      console.log(`[${key}] = ${positionOffset * iteration}`);
+    })
   }, [])
-  
   
   return (<script />)
 }
