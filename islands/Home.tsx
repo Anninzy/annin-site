@@ -4,7 +4,7 @@ import { useEffect } from "preact/hooks";
 
 const linkCorrespondingPosition = new Map();
 const currentPatternPosition = signal(0);
-const currentBackgroundPosition = signal(-10);
+const currentBackgroundPosition = signal(0);
 type linkProps = {
   name: string;
 };
@@ -34,7 +34,7 @@ function EndOfLinks() {
   useEffect(() => {
     const amountOfLinks = linkCorrespondingPosition.size
     const patternPositionOffset = 100 / amountOfLinks
-    const backgroundPositionOffset = 10 / amountOfLinks
+    const backgroundPositionOffset = 5 / amountOfLinks
     
     let iteration = 0
     linkCorrespondingPosition.forEach((value, key, map) => {
