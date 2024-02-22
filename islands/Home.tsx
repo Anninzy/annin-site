@@ -11,6 +11,7 @@ type linkProps = {
 function Link(props: linkProps) {
   useEffect(() => {
     linkCorrespondingPatternPosition.set(props.name, 0);
+    console.log("map set")
   }, [])
 
   function shiftBackgroundAndPattern() {
