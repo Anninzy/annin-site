@@ -112,7 +112,7 @@ body:has(> #menu) {
 
 #menu #background {
 	object-fit: cover;
-	scale: 1.1;
+	scale: 1.2;
 	height: 100%;
 	width: 100%;
 	opacity: 0.2;
@@ -160,7 +160,7 @@ body:has(> #menu) {
 }
 
 #menu #items:hover~#background {
-	scale: 1;
+	scale: 1.1;
 	opacity: 0.1;
 }
 
