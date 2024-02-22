@@ -28,10 +28,10 @@ function Link(props: linkProps) {
 }
 
 function EndOfLinks() {
-  console.log("end of links component")
   const positionOffset = 100 / linkCorrespondingPatternPosition.size
   let iteration = 0
   console.log("before foreach")
+  console.log(linkCorrespondingPatternPosition.size)
   linkCorrespondingPatternPosition.forEach((value, key, map) => {
     console.log("function ran")
     iteration++
