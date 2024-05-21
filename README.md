@@ -1,7 +1,6 @@
-# Fresh project
+# Rewrite
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+For some reason the main branch cannot create ahead-of-time builds. Gotta figure out what's wrong.
 
 ### Usage
 
