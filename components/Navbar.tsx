@@ -1,10 +1,10 @@
 export default function () {
   return (
-    <ul id="navbar" class="verticalCenter">
+    <ul id="navbar" class="position-vertical-center">
       <li>
-        <a id="homeButton" href="/">
-          <div class="center">
-            <img src="/logo.png" />
+        <a id="home-button" href="/">
+          <div class="position-center">
+            <img src="/logo.svg" />
           </div>
         </a>
       </li>
@@ -16,9 +16,6 @@ export default function () {
       </li>
       <li>
         <a href="/portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a href="/about">About</a>
       </li>
     </ul>
   );
