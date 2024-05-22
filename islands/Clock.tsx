@@ -16,6 +16,6 @@ function setClock() {
 
 export default function () {
   setClock();
-  if (!IS_BROWSER) setInterval(setClock, 1000);
+  if (IS_BROWSER) setInterval(setClock, 1000);
   return <span>{time}</span>;
 }
