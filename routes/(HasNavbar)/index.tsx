@@ -9,7 +9,7 @@ export default function () {
         <meta name="description" content="All about Annin."></meta>
       </Head>
 
-      <div id="about" class="size-page position-center">
+      <div id="about" class="size-page position-child-center">
         <div>
           <h3>anninzy#0000</h3>
           <h4>Professional procrastinator.</h4>

@@ -1,9 +1,9 @@
 export default function () {
   return (
-    <ul id="navbar" class="position-vertical-center">
+    <ul id="navbar" class="position-child-vertical-center">
       <li>
         <a id="home-button" href="/">
-          <div class="position-center">
+          <div class="position-child-center">
             <img src="/logo.svg" />
           </div>
         </a>
