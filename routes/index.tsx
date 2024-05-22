@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-//import Clock from "../islands/Clock.tsx";
+import Clock from "../islands/Clock.tsx";
 
 export default function () {
   return (
@@ -14,7 +14,7 @@ export default function () {
           <h3>anninzy#0000</h3>
           <h4>Professional procrastinator.</h4>
           <p>
-            It is currently  for me.
+            It is currently <Clock /> for me.
           </p>
         </div>
       </div>
