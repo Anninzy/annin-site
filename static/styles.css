@@ -88,7 +88,8 @@ h2 {
 }
 
 #four-o-four {
-  
+  box-sizing: border-box;
+  padding: 10%;
 }
 
 #four-o-four #icon-inline-text {
