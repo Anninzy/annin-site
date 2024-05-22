@@ -1,3 +1,4 @@
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import { signal } from "@preact/signals";
 
 const time = signal("LO:AD:IN");
@@ -12,9 +13,9 @@ const dateTimeFormat = new Intl.DateTimeFormat("en-US", {
 function setClock() {
   time.value = dateTimeFormat.format(new Date());
 }
-setClock();
-//setInterval(setClock, 1000);
 
 export default function () {
+  setClock();
+  if (!IS_BROWSER) setInterval(setClock, 1000);
   return <span>{time}</span>;
 }
