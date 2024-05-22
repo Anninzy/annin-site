@@ -1,21 +1,21 @@
 @import url(https://fonts.bunny.net/css?family=major-mono-display:400|space-mono:400,400i,700,700i);
 
-.center {
+.position-center {
   display: grid;
   place-items: center;
 }
 
-.verticalCenter {
+.position-vertical-center {
   display: flex;
   align-items: center;
 }
 
-.horizontalCenter {
+.position-horizontal-center {
   display: flex;
   justify-content: center;
 }
 
-.pageSize {
+.size-page {
   height: 100%;
   width: 100%;
 }
