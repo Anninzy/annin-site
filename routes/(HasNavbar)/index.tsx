@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import Clock from "../islands/Clock.tsx";
+import Clock from "../../islands/Clock.tsx";
 
 export default function () {
   return (
