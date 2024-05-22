@@ -94,13 +94,14 @@ h2 {
 
 #four-o-four #icon-inline-text {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 #four-o-four img {
   width: 10%;
   height: 10%;
+  margin: 0 3%;
 }
 
 #portfolio h3 {
