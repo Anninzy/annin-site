@@ -13,9 +13,13 @@ function getClockString() {
   return dateTimeFormat.format(new Date());
 }
 
+function setTimeValue() {
+  time.value = getClockString();
+}
+
 const time = signal(getClockString());
 
 export default function () {
-  if (IS_BROWSER) setInterval(time.value = getClockString(), 1000);
+  if (IS_BROWSER) setInterval(setTimeValue, 1000);
   return <span>{time}</span>;
 }
