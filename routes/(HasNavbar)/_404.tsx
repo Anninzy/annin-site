@@ -1,12 +1,20 @@
 import { Head } from "$fresh/runtime.ts";
 
-export default function Error404() {
+export default function () {
   return (
     <>
       <Head>
-        <title>404 - Page not found</title>
+        <title>404</title>
       </Head>
-      <div class="px-4 py-8 mx-auto bg-[#86efac]">
+
+      <div class="pageSize center">
+        <div>
+          <h1>&lt;404&gt;</h1>
+          <h2>Where nothing but the abyss resides.</h2>
+        </div>
+      </div>
+      
+      {/* <div class="px-4 py-8 mx-auto bg-[#86efac]">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
           <img
             class="my-6"
@@ -21,7 +29,7 @@ export default function Error404() {
           </p>
           <a href="/" class="underline">Go back home</a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
