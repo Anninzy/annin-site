@@ -1,4 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
+import AsynchronouslyLoadCSS from "../islands/AsynchronouslyLoadCSS.tsx";
 
 export default function ({ Component }: PageProps) {
 	return (
@@ -6,7 +7,7 @@ export default function ({ Component }: PageProps) {
 			<head>
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<link rel="stylesheet" href="https://fonts.bunny.net/css?family=major-mono-display:400|space-mono:100,700&display=swap" />
+				<AsynchronouslyLoadCSS />
 				<link rel="stylesheet" href="/styles.css" />
 			</head>
 
