@@ -123,6 +123,17 @@ h2 {
 	}
 }
 
+#portfolio #arrow {
+	display: block;
+	position: absolute;
+	bottom: 10%;
+	width: 1.5vw;
+	height: 1.5vw;
+	border-bottom: 5px solid;
+	border-right: 5px solid;
+	transform: rotate(45deg);
+}
+
 #portfolio h3 {
 	font-size: 1.5em;
 }
