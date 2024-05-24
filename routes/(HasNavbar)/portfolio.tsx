@@ -37,8 +37,10 @@ export default function () {
 
 				<div class="size-page position-child-center">
 					<div>
-						<h3>Find the source code of this website on <span><a href="https://github.com/Anninzy/annin-site">Github</a></span>.</h3>
-						<h3>I traced the icon of the website, the eye, from an artwork of Modeus by daigada.</h3>
+						<h3>Find the source code of this website on my <a href="https://github.com/Anninzy/annin-site">Github repo</a>.</h3>
+						<h3>You can find the source code of my other <s>abandoned</s> projects on <a href="https://github.com/Anninzy">Github</a> as well.</h3>
+						<h3>I traced the icon of the website (the Eye) from an artwork of <a href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus">Modeus</a> by <a href="https://linktr.ee/j5daigada">daigada</a> (content warning). Hopefully they don't mind.</h3>
+						<h3>Lastly, a huge thanks to the internet for Stack Overflow and documentations.</h3>
 					</div>
 				</div>
 			</div>

@@ -138,6 +138,11 @@ h2 {
 	font-size: 1.5em;
 }
 
+#portfolio a {
+	color: rgb(0, 0, 0);
+	font-weight: 100;
+}
+
 #about h3,
 h4,
 h5,
