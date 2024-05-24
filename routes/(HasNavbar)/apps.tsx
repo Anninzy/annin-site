@@ -1,3 +1,5 @@
+import { Head } from "$fresh/runtime.ts";
+
 export default function () {
 	return (
 		<>
