@@ -5,6 +5,7 @@ export default function () {
 		<>
 			<Head>
 				<title>404</title>
+				<meta name="description" content="Wuh oh. 404."></meta>
 			</Head>
 
 			<div id="four-o-four" class="size-page position-child-center">
@@ -16,9 +17,7 @@ export default function () {
 						</a>
 						<h1>4&gt;</h1>
 					</div>
-					<h2>
-						When you stare into the abyss, the abyss beats you up for staring or whatever.
-					</h2>
+					<h2>When you stare into the abyss, the abyss beats you up for staring or whatever.</h2>
 				</div>
 			</div>
 		</>
