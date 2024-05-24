@@ -3,6 +3,8 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_HasNavbar_layout from "./routes/(HasNavbar)/_layout.tsx";
+import * as $_HasNavbar_apps from "./routes/(HasNavbar)/apps.tsx";
+import * as $_HasNavbar_blog from "./routes/(HasNavbar)/blog.tsx";
 import * as $_HasNavbar_index from "./routes/(HasNavbar)/index.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
@@ -12,6 +14,8 @@ import { type Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/(HasNavbar)/_layout.tsx": $_HasNavbar_layout,
+    "./routes/(HasNavbar)/apps.tsx": $_HasNavbar_apps,
+    "./routes/(HasNavbar)/blog.tsx": $_HasNavbar_blog,
     "./routes/(HasNavbar)/index.tsx": $_HasNavbar_index,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
