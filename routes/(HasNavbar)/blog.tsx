@@ -9,7 +9,7 @@ export default function () {
 			</Head>
 
 			<div class="size-page position-child-center">
-				<h1>Coming soon as well.</h1>
+				<h1>Coming if I figure out what to write about.</h1>
 			</div>
 		</>
 	);
