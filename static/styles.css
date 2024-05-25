@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .position-child-center {
+	display: grid;
+	place-items: center;
+}
+
+.position-child-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+.position-child-horizontal-center {
+	display: flex;
+	justify-content: center;
+}
+
+.size-page {
+	height: 100%;
+	width: 100%;
+}
+
+html,
+body {
+	font-family: "Space Mono", monospace;
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Major Mono Display", monospace;
+	font-size: 10em;
+	margin-bottom: 2.5vh;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+#navbar {
+	background-color: rgb(32, 32, 32);
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+}
+
+#navbar #home-button {
+	margin: 0 2vw 0 1vw;
+}
+
+#navbar a {
+	color: rgb(255, 255, 255);
+	display: block;
+	font-family: "Major Mono Display", monospace;
+	font-size: 1.5vw;
+	margin: 1vw;
+	text-decoration: none;
+}
+
+#navbar div {
+	background-color: rgb(255, 255, 255);
+	border-radius: 100%;
+	height: 2vw;
+	width: 2vw;
+}
+
+#navbar img {
+	height: 75%;
+	width: 75%;
+}
+
+#navbar li:has(a[aria-current='page']):not(:has(a div)) {
+	background-color: rgb(64, 64, 64);
+}
+
+#four-o-four {
+	box-sizing: border-box;
+	padding: 10%;
+}
+
+#four-o-four #icon-inline-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#four-o-four a {
+	margin: 0 3%;
+	margin-bottom: 2.5vh;
+}
+
+#four-o-four img {
+	width: 10em;
+	height: 10em;
+	animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+#portfolio #arrow {
+	display: block;
+	position: absolute;
+	bottom: 10%;
+	width: 1.5vw;
+	height: 1.5vw;
+	border-bottom: 5px solid;
+	border-right: 5px solid;
+	transform: rotate(45deg);
+}
+
+#portfolio h3 {
+	font-size: 1.5em;
+}
+
+#portfolio a {
+	color: rgb(0, 0, 0);
+	font-weight: 100;
+}
+
+#about h3,
+h4,
+h5,
+h6 {
+	text-align: left;
+}
+
+#about h3 {
+	font-size: 5em;
+}
+
+#about h4 {
+	font-size: 2em;
+} */
