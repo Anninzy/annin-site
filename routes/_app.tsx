@@ -15,7 +15,7 @@ export default function ({ Component }: PageProps) {
         <link rel="stylesheet" href={asset("/styles.css")} />
       </head>
 
-      <body class="latte dark:mocha bg-base">
+      <body class="latte bg-base dark:mocha dark:text-white">
         <Component />
       </body>
     </html>
