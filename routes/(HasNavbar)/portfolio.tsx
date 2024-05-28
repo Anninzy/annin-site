@@ -16,7 +16,7 @@ interface LinkProps {
 function Page({ title, subtitle, description, arrow }: PageProps) {
   return (
     <div class="size-full flex flex-col items-center justify-center">
-      <h1 class="text-9xl">{title}</h1>
+      <h1 class="font-major text-9xl">{title}</h1>
       <h2 class="text-3xl">{subtitle}</h2>
       <p class="text-xl">{description}</p>
       {arrow}

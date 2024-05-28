@@ -9,7 +9,7 @@ export default function () {
       </Head>
 
       <div class="size-full flex flex-col items-center justify-center gap-3">
-        <div class="flex items-center gap-6">
+        <div class="flex items-center gap-6 font-major">
           <h1 class="text-9xl">&lt;4</h1>
           <a href="/">
             <img class="size-32" src="/logo.svg" />
