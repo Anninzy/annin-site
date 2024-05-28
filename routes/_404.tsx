@@ -12,7 +12,7 @@ export default function () {
         <div class="flex items-center gap-6 font-major">
           <h1 class="text-9xl">&lt;4</h1>
           <a href="/">
-            <img class="size-32" src="/logo.svg" />
+            <img class="size-32" src="/logo_animated.svg" />
           </a>
           <h1 class="text-9xl">4&gt;</h1>
         </div>
