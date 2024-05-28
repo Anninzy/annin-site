@@ -1,4 +1,38 @@
+import { ComponentChildren } from "preact";
 import { Head } from "$fresh/runtime.ts";
+
+interface PageProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  arrow?: ComponentChildren;
+}
+
+interface LinkProps {
+  href: string;
+  text: string;
+}
+
+function Page({ title, subtitle, description, arrow }: PageProps) {
+  return (
+    <div class="size-full flex flex-col items-center justify-center">
+      <h1 class="text-9xl">{title}</h1>
+      <h2 class="text-3xl">{subtitle}</h2>
+      <p class="text-xl">{description}</p>
+      {arrow}
+    </div>
+  );
+}
+
+function Link({ href, text }: LinkProps) {
+  return (
+    <u>
+      <a class="font-bold" href={href}>
+        {text}
+      </a>
+    </u>
+  );
+}
 
 export default function () {
   return (
@@ -12,63 +46,60 @@ export default function () {
         </meta>
       </Head>
 
-      <div id="portfolio" class="size-page">
-        <div class="size-page position-child-center">
-          <div>
-            <h1>ANNIN-SITE</h1>
-            <h2>Buuuuuuuuuuuuut it's still under heavy construction.</h2>
-            <h3>
-              1st web dev project, attempt #4. Initial attempt dating back to
-              FEB 2023.
-            </h3>
-            <h3>
-              Written in TS. Created with TSX & CSS. Built with Deno & Fresh.
-            </h3>
-          </div>
-          <div id="arrow" />
-        </div>
+      <Page
+        title="ANNIN-SITE"
+        subtitle="Under heavy construction."
+        description="Written in TS. Created with TSX & CSS. Built with Deno & Fresh."
+        arrow=<div id="arrow" />
+      />
 
-        <div class="size-page position-child-center">
-          <div>
-            <h1>FPS</h1>
-            <h2>A prototype (barely ¯\_(ツ)_/¯).</h2>
-            <h3>Written in luau. Built with Rojo. Ran in Roblox.</h3>
-          </div>
-        </div>
+      <Page
+        title="FPS"
+        subtitle="An attempt to replicate VALORANT in a Lego game."
+        description="Written in luau. Built with Rojo. Ran in Roblox."
+      />
 
-        <div class="size-page position-child-center">
-          <div>
-            <h1>MORE</h1>
-            <h2>There's some commissions and other personal projects.</h2>
-            <h3>I'll document them. Eventually.</h3>
-          </div>
-        </div>
+      <Page
+        title="MORE"
+        subtitle="Commissions & work in progress projects."
+        description="I'll upload media of those. Soon. Maybe."
+      />
 
-        <div class="size-page position-child-center">
-          <div>
-            <h3>
-              Find the source code of this website on my{" "}
-              <a href="https://github.com/Anninzy/annin-site">Github repo</a>.
-            </h3>
-            <h3>
-              You can find the source code of my other <s>abandoned</s>{" "}
-              projects on <a href="https://github.com/Anninzy">Github</a>{" "}
-              as well.
-            </h3>
-            <h3>
-              I traced the icon of the website (the Eye) from an artwork of{" "}
-              <a href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus">
-                Modeus
-              </a>{" "}
-              by <a href="https://linktr.ee/j5daigada">daigada</a>{" "}
-              (content warning). Hopefully they don't mind.
-            </h3>
-            <h3>
-              Lastly, a huge thanks to the internet for Stack Overflow and
-              documentations.
-            </h3>
-          </div>
-        </div>
+      <div class="size-full p-48 flex flex-col items-center justify-center text-center">
+        <p>
+          Find the source code of this website on my{" "}
+          <Link
+            href="https://github.com/Anninzy/annin-site"
+            text="Github repo"
+          />
+          .
+        </p>
+        <p>
+          You can find the source code of my other <s>abandoned</s> projects on
+          {" "}
+          <Link
+            href="https://github.com/Anninzy"
+            text="Github"
+          />{" "}
+          as well.
+        </p>
+        <p>
+          I traced the icon of the website from an{" "}
+          <Link
+            href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus"
+            text="artwork"
+          />{" "}
+          by{" "}
+          <Link
+            href="https://linktr.ee/j5daigada"
+            text="daigada"
+          />{" "}
+          (content warning). Hopefully they don't mind.
+        </p>
+        <p>
+          Lastly, a huge thanks to the internet for Stack Overflow, frameworks,
+          and documentations.
+        </p>
       </div>
     </>
   );
