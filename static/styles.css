@@ -10,6 +10,10 @@
 	}
 }
 
+#navbar-list a[aria-current="page"] {
+	color: #f38ba8;
+}
+
 /* .position-child-center {
 	display: grid;
 	place-items: center;
@@ -91,10 +95,6 @@ h2 {
 #navbar img {
 	height: 75%;
 	width: 75%;
-}
-
-#navbar li:has(a[aria-current='page']):not(:has(a div)) {
-	background-color: rgb(64, 64, 64);
 }
 
 #four-o-four {
