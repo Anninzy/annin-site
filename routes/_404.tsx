@@ -8,20 +8,18 @@ export default function () {
         <meta name="description" content="Wuh oh. 404."></meta>
       </Head>
 
-      <div id="four-o-four" class="size-page position-child-center">
-        <div>
-          <div id="icon-inline-text">
-            <h1>&lt;4</h1>
-            <a href="/">
-              <img src="/logo.svg" />
-            </a>
-            <h1>4&gt;</h1>
-          </div>
-          <h2>
-            When you stare into the abyss, the abyss beats you up for staring or
-            whatever.
-          </h2>
+      <div class="size-full flex flex-col items-center justify-center gap-3">
+        <div class="flex items-center gap-6">
+          <h1 class="text-9xl">&lt;4</h1>
+          <a href="/">
+            <img class="size-32" src="/logo.svg" />
+          </a>
+          <h1 class="text-9xl">4&gt;</h1>
         </div>
+        <p class="text-xl">
+          When you stare into the abyss, the abyss beats you up for staring or
+          whatever.
+        </p>
       </div>
     </>
   );
