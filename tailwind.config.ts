@@ -6,6 +6,11 @@ export default {
     "{routes,islands,components}/**/*.{ts,tsx}",
   ],
   darkMode: "selector",
+  theme: {
+    fontFamily: {
+      major: ["Major Mono Display", "monospace"]
+    },
+  },
   // deno-lint-ignore no-explicit-any
-  plugins: [catppuccin as any],
+  plugins: [catppuccin as any]
 } satisfies Config;
