@@ -10,7 +10,7 @@ export default function () {
       </Head>
 
       <div class="size-full flex items-center justify-center">
-        <div>
+        <div class="flex flex-col gap-3">
           <h1 class="text-8xl">anninzy#0000</h1>
           <h2 class="text-4xl">Professional procrastinator.</h2>
           <p class="text-xl">
