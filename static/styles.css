@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://fonts.bunny.net/css?family=major-mono-display:400|space-mono:400,400i,700,700i?display=swap);
+
+@layer base {
+	html {
+		font-family: "Space Mono", monospace;
+	}
+}
+
 /* .position-child-center {
 	display: grid;
 	place-items: center;
