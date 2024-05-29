@@ -10,8 +10,12 @@
 	}
 }
 
-.invert {
-	filter: invert(100%);
+a {
+	@apply underline font-bold
+}
+
+#navbar-list a {
+	@apply no-underline font-normal
 }
 
 #navbar-list a[aria-current="page"] {

@@ -8,11 +8,6 @@ interface PageProps {
   arrow?: ComponentChildren;
 }
 
-interface LinkProps {
-  href: string;
-  text: string;
-}
-
 function Page({ heading, subheading, description, arrow }: PageProps) {
   return (
     <div class="size-full flex flex-col items-center justify-center">
@@ -21,16 +16,6 @@ function Page({ heading, subheading, description, arrow }: PageProps) {
       <p class="text-xl">{description}</p>
       {arrow}
     </div>
-  );
-}
-
-function Link({ href, text }: LinkProps) {
-  return (
-    <u>
-      <a class="font-bold" href={href}>
-        {text}
-      </a>
-    </u>
   );
 }
 
@@ -68,55 +53,29 @@ export default function () {
       <div class="size-full p-48 flex flex-col items-center justify-center text-center text-xl">
         <p>
           Find the source code of this website on my{" "}
-          <Link
-            href="https://github.com/Anninzy/annin-site"
-            text="Github repo"
-          />
-          .
+          <a href="https://github.com/Anninzy/annin-site">Github repo</a>.
         </p>
         <p>
           You can find the source code of my other <s>abandoned</s> projects on
           {" "}
-          <Link
-            href="https://github.com/Anninzy"
-            text="Github"
-          />{" "}
-          as well.
+          <a href="https://github.com/Anninzy">Github</a> as well.
         </p>
         <p>
           I traced the icon of the website from an{" "}
-          <Link
-            href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus"
-            text="artwork"
-          />{" "}
-          by{" "}
-          <Link
-            href="https://linktr.ee/j5daigada"
-            text="daigada"
-          />{" "}
+          <a href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus">
+            artwork
+          </a>{" "}
+          by <a href="https://linktr.ee/j5daigada">daigada</a>{" "}
           (content warning). Hopefully they don't mind.
         </p>
         <p>
-          <Link
-            href="https://www.svgrepo.com/svg/491493/sun"
-            text="Sun"
-          />{" "}
-          &{" "}
-          <Link
-            href="https://www.svgrepo.com/svg/491454/moon"
-            text="moon"
-          />{" "}
-          SVGs from{" "}
-          <Link
-            href="https://www.svgrepo.com/"
-            text="SVG Repo"
-          />{" "}
-          under the{" "}
-          <Link
-            href="https://creativecommons.org/licenses/by/4.0/"
-            text="CC Attribution License"
-          />
-          .
+          <a href="https://www.svgrepo.com/svg/491493/sun">Sun</a> &{" "}
+          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a> SVGs from
+          {" "}
+          <a href="https://www.svgrepo.com/">SVG Repo</a> under the{" "}
+          <a href="https://creativecommons.org/licenses/by/4.0/">
+            CC Attribution License
+          </a>.
         </p>
         <p>
           Lastly, a huge thanks to the internet for Stack Overflow, frameworks,
