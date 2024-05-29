@@ -8,10 +8,10 @@
 	html {
 		font-family: "Space Mono", monospace;
 	}
-}
 
-a {
-	@apply underline font-bold
+	a {
+		@apply underline font-bold
+	}
 }
 
 #navbar-list a {
@@ -24,15 +24,4 @@ a {
 
 #navbar-list a[aria-current="page"] div {
 	@apply bg-red
-}
-
-#arrow {
-	display: block;
-	position: absolute;
-	bottom: 10%;
-	width: 1.5vw;
-	height: 1.5vw;
-	border-bottom: 5px solid;
-	border-right: 5px solid;
-	transform: rotate(45deg);
 }

@@ -11,9 +11,9 @@ interface PageProps {
 function Page({ heading, subheading, description, arrow }: PageProps) {
   return (
     <div class="size-full flex flex-col items-center justify-center">
-      <h1 class="font-major text-9xl">{heading}</h1>
-      <h2 class="text-3xl">{subheading}</h2>
-      <p class="text-xl">{description}</p>
+      <h1 class="font-major text-center text-9xl">{heading}</h1>
+      <h2 class="text-center text-3xl">{subheading}</h2>
+      <p class="text-center text-xl">{description}</p>
       {arrow}
     </div>
   );
@@ -35,7 +35,9 @@ export default function () {
         heading="ANNIN-SITE"
         subheading="Under heavy construction."
         description="Written in TSX. Styled with Tailwind. Built with Fresh."
-        arrow=<div id="arrow" />
+        arrow={
+          <div class="absolute bottom-[10%] w-[5vmin] aspect-square border-b-[0.5vmin] border-r-[0.5vmin] rotate-45" />
+        }
       />
 
       <Page
