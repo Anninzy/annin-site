@@ -1,4 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
+import ThemeButton from "../../islands/ThemeButton.tsx";
 
 export default function ({ Component }: PageProps) {
   return (
@@ -21,6 +22,7 @@ export default function ({ Component }: PageProps) {
           <li>
             <a href="/portfolio">Portfolio</a>
           </li>
+          <ThemeButton/>
         </ul>
       </nav>
       <Component />
