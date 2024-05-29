@@ -13,11 +13,11 @@ export default function () {
   function getClockString() {
     return dateTimeFormat.format(new Date());
   }
-  
+
   function setTimeValue() {
     time.value = getClockString();
   }
-  
+
   const time = useSignal(getClockString());
   if (IS_BROWSER) setInterval(setTimeValue, 1000);
 

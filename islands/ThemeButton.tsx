@@ -1,13 +1,13 @@
 export default function () {
   function changeTheme() {
-    console.log(localStorage.getItem("useLightTheme"))
-    const rootClassList = document.documentElement.classList
+    console.log(localStorage.getItem("useLightTheme"));
+    const rootClassList = document.documentElement.classList;
 
     if (localStorage.getItem("useLightTheme")) {
-      localStorage.removeItem("useLightTheme")
+      localStorage.removeItem("useLightTheme");
       rootClassList.add("dark");
     } else {
-      localStorage.setItem("useLightTheme", "true")
+      localStorage.setItem("useLightTheme", "true");
       rootClassList.remove("dark");
     }
   }

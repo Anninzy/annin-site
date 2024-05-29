@@ -14,6 +14,10 @@
 	@apply text-red
 }
 
+#navbar-list a[aria-current="page"] div {
+	@apply bg-red
+}
+
 #arrow {
 	display: block;
 	position: absolute;

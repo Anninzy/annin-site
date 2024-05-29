@@ -10,6 +10,7 @@ import * as $_HasNavbar_portfolio from "./routes/(HasNavbar)/portfolio.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $Clock from "./islands/Clock.tsx";
+import * as $SetTheme from "./islands/SetTheme.tsx";
 import * as $ThemeButton from "./islands/ThemeButton.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -25,6 +26,7 @@ const manifest = {
   },
   islands: {
     "./islands/Clock.tsx": $Clock,
+    "./islands/SetTheme.tsx": $SetTheme,
     "./islands/ThemeButton.tsx": $ThemeButton,
   },
   baseUrl: import.meta.url,
