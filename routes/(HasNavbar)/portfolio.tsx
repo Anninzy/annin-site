@@ -2,8 +2,8 @@ import { ComponentChildren } from "preact";
 import { Head } from "$fresh/runtime.ts";
 
 interface PageProps {
-  title: string;
-  subtitle: string;
+  heading: string;
+  subheading: string;
   description: string;
   arrow?: ComponentChildren;
 }
@@ -13,11 +13,11 @@ interface LinkProps {
   text: string;
 }
 
-function Page({ title, subtitle, description, arrow }: PageProps) {
+function Page({ heading, subheading, description, arrow }: PageProps) {
   return (
     <div class="size-full flex flex-col items-center justify-center">
-      <h1 class="font-major text-9xl">{title}</h1>
-      <h2 class="text-3xl">{subtitle}</h2>
+      <h1 class="font-major text-9xl">{heading}</h1>
+      <h2 class="text-3xl">{subheading}</h2>
       <p class="text-xl">{description}</p>
       {arrow}
     </div>
@@ -47,21 +47,21 @@ export default function () {
       </Head>
 
       <Page
-        title="ANNIN-SITE"
-        subtitle="Under heavy construction."
-        description="Written in TS. Created with TSX & CSS. Built with Deno & Fresh."
+        heading="ANNIN-SITE"
+        subheading="Under heavy construction."
+        description="Written in TSX. Created with Tailwind. Built with Fresh."
         arrow=<div id="arrow" />
       />
 
       <Page
-        title="FPS"
-        subtitle="An attempt to replicate VALORANT in a Lego game."
+        heading="FPS"
+        subheading="An attempt to replicate VALORANT in a Lego game."
         description="Written in luau. Built with Rojo. Ran in Roblox."
       />
 
       <Page
-        title="MORE"
-        subtitle="Commissions & work in progress projects."
+        heading="MORE"
+        subheading="Commissions & work in progress projects."
         description="I'll upload media of those. Soon. Maybe."
       />
 
