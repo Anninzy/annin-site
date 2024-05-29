@@ -72,7 +72,7 @@ export default function () {
         </p>
         <p>
           <a href="https://www.svgrepo.com/svg/491493/sun">Sun</a> &{" "}
-          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a> SVGs from
+          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a> (fill colour changed to #FFFFFF) SVGs from
           {" "}
           <a href="https://www.svgrepo.com/">SVG Repo</a> under the{" "}
           <a href="https://creativecommons.org/licenses/by/4.0/">
