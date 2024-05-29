@@ -28,7 +28,7 @@ export default function () {
 
   return (
     <button onClick={changeTheme} class="ml-auto aspect-square h-full">
-      <img class="dark:invert" src={`/${icon}.svg`} />
+      <img src={`/${icon}.svg`} />
     </button>
   );
 }
