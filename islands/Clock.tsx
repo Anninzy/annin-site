@@ -21,5 +21,9 @@ export default function () {
   const time = useSignal(getClockString());
   if (IS_BROWSER) setInterval(setTimeValue, 1000);
 
-  return <span>{time}</span>;
+  return (
+    <p class="text-xl">
+      It is currently {time} for me.
+    </p>
+  );
 }

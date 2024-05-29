@@ -13,9 +13,7 @@ export default function () {
         <div class="flex flex-col gap-3">
           <h1 class="text-8xl">anninzy#0000</h1>
           <h2 class="text-4xl">Professional procrastinator.</h2>
-          <p class="text-xl">
-            It is currently <Clock /> for me.
-          </p>
+          <Clock />
         </div>
       </div>
     </>
