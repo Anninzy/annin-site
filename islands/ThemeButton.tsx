@@ -1,12 +1,15 @@
 import { useSignal } from "@preact/signals";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 export default function () {
   const icon = useSignal("moon");
 
-  if (localStorage.getItem("useLightTheme")) {
-    icon.value = "sun";
-  } else {
-    icon.value = "moon";
+  if (IS_BROWSER) {
+    if (localStorage.getItem("useLightTheme")) {
+      icon.value = "sun";
+    } else {
+      icon.value = "moon";
+    }
   }
 
   function changeTheme() {
