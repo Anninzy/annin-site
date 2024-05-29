@@ -5,8 +5,7 @@ export default function () {
     <>
       <Head>
         <title>Apps</title>
-        <meta name="description" content="A collection of boring web apps.">
-        </meta>
+        <meta name="description" content="A collection of boring web apps." />
       </Head>
     </>
   );

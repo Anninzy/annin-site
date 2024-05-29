@@ -6,7 +6,7 @@ export default function () {
     <>
       <Head>
         <title>About</title>
-        <meta name="description" content="Oh hi."></meta>
+        <meta name="description" content="Oh hi." />
       </Head>
 
       <div class="size-full flex items-center justify-center">

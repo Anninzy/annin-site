@@ -28,6 +28,7 @@ export default function ({ Component }: PageProps) {
           <ThemeButton />
         </ul>
       </nav>
+
       <Component />
     </>
   );
