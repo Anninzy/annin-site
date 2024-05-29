@@ -11,7 +11,7 @@
 }
 
 #navbar-list a[aria-current="page"] {
-	color: #f38ba8;
+	@apply text-red
 }
 
 #arrow {
