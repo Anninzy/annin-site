@@ -97,6 +97,28 @@ export default function () {
           (content warning). Hopefully they don't mind.
         </p>
         <p>
+          <Link
+            href="https://www.svgrepo.com/svg/491493/sun"
+            text="Sun"
+          />{" "}
+          &{" "}
+          <Link
+            href="https://www.svgrepo.com/svg/491454/moon"
+            text="moon"
+          />{" "}
+          SVGs from{" "}
+          <Link
+            href="https://www.svgrepo.com/"
+            text="SVG Repo"
+          />{" "}
+          under the{" "}
+          <Link
+            href="https://creativecommons.org/licenses/by/4.0/"
+            text="CC Attribution License"
+          />
+          .
+        </p>
+        <p>
           Lastly, a huge thanks to the internet for Stack Overflow, frameworks,
           and documentations.
         </p>
