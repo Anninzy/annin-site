@@ -65,7 +65,7 @@ export default function () {
         description="I'll upload media of those. Soon. Maybe. Perhaps."
       />
 
-      <div class="size-full p-48 flex flex-col items-center justify-center text-center">
+      <div class="size-full p-48 flex flex-col items-center justify-center text-center text-xl">
         <p>
           Find the source code of this website on my{" "}
           <Link
