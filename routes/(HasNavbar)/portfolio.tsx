@@ -49,20 +49,20 @@ export default function () {
       <Page
         heading="ANNIN-SITE"
         subheading="Under heavy construction."
-        description="Written in TSX. Created with Tailwind. Built with Fresh."
+        description="Written in TSX. Styled with Tailwind. Built with Fresh."
         arrow=<div id="arrow" />
       />
 
       <Page
         heading="FPS"
         subheading="An attempt to replicate VALORANT in a Lego game."
-        description="Written in luau. Built with Rojo. Ran in Roblox."
+        description="Written in luau. Built with Rojo."
       />
 
       <Page
         heading="MORE"
         subheading="Commissions & work in progress projects."
-        description="I'll upload media of those. Soon. Maybe."
+        description="I'll upload media of those. Soon. Maybe. Perhaps."
       />
 
       <div class="size-full p-48 flex flex-col items-center justify-center text-center">
