@@ -4,7 +4,7 @@ import ThemeButton from "../../islands/ThemeButton.tsx";
 export default function ({ Component }: PageProps) {
   return (
     <>
-      <nav class="absolute w-screen h-12 bg-crust">
+      <nav class="fixed z-10 w-screen h-12 bg-crust">
         <ul
           id="navbar-list"
           class="font-major p-2 size-full flex flex-row items-center gap-6"
