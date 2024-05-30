@@ -12,7 +12,7 @@ export default function ({ Component }: PageProps) {
         <SetTheme />
       </head>
 
-      <body class="latte bg-base dark:mocha dark:text-white size-full">
+      <body class="latte size-full bg-base dark:mocha dark:text-white">
         <Component />
       </body>
     </html>

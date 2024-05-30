@@ -25,3 +25,11 @@ deno install npm:prettier-plugin-tailwindcss
 ```
 
 I put them in the import map, but I don't think it will be cached if it's never actually imported.
+
+Run:
+
+```
+deno run -A npm:prettier . --write
+```
+
+To format all files

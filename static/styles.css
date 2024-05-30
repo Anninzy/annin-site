@@ -5,23 +5,23 @@
 @tailwind utilities;
 
 @layer base {
-	html {
-		font-family: "Space Mono", monospace;
-	}
+  html {
+    font-family: "Space Mono", monospace;
+  }
 
-	a {
-		@apply underline font-bold
-	}
+  a {
+    @apply font-bold underline;
+  }
 }
 
 #navbar-list a {
-	@apply no-underline font-normal
+  @apply font-normal no-underline;
 }
 
 #navbar-list a[aria-current="page"] {
-	@apply text-red
+  @apply text-red;
 }
 
 #navbar-list a[aria-current="page"] div {
-	@apply bg-red
+  @apply bg-red;
 }

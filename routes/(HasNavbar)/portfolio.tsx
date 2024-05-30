@@ -57,8 +57,7 @@ export default function () {
           <a href="https://github.com/Anninzy/annin-site">Github repo</a>.
         </p>
         <p>
-          You can find the source code of my other <s>abandoned</s> projects on
-          {" "}
+          You can find the source code of my other <s>abandoned</s> projects on{" "}
           <a href="https://github.com/Anninzy">Github</a> as well.
         </p>
         <p>
@@ -66,13 +65,13 @@ export default function () {
           <a href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus">
             artwork
           </a>{" "}
-          by <a href="https://linktr.ee/j5daigada">daigada</a>{" "}
-          (content warning). Hopefully they don't mind.
+          by <a href="https://linktr.ee/j5daigada">daigada</a> (content
+          warning). Hopefully they don't mind.
         </p>
         <p>
           <a href="https://www.svgrepo.com/svg/491493/sun">Sun</a> &{" "}
-          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a>{" "}
-          (fill colour changed to #FFFFFF) SVGs from{" "}
+          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a> (fill
+          colour changed to #FFFFFF) SVGs from{" "}
           <a href="https://www.svgrepo.com/">SVG Repo</a> under the{" "}
           <a href="https://creativecommons.org/licenses/by/4.0/">
             CC Attribution License
