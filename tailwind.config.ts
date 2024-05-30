@@ -1,5 +1,5 @@
 import { type Config } from "tailwindcss";
-import catppuccin from "npm:@catppuccin/tailwindcss";
+import catppuccin from "catppuccin";
 
 export default {
   content: [
