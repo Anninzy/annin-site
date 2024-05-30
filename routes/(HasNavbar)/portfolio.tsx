@@ -10,8 +10,8 @@ interface PageProps {
 
 function Page({ heading, subheading, description, arrow }: PageProps) {
   return (
-    <div class="size-full flex flex-col items-center justify-center">
-      <h1 class="font-major text-center text-9xl">{heading}</h1>
+    <div class="flex size-full flex-col items-center justify-center">
+      <h1 class="text-center font-major text-9xl">{heading}</h1>
       <h2 class="text-center text-3xl">{subheading}</h2>
       <p class="text-center text-xl">{description}</p>
       {arrow}
@@ -35,7 +35,7 @@ export default function () {
         subheading="Under heavy construction."
         description="Written in TSX. Styled with Tailwind. Built with Fresh."
         arrow={
-          <div class="border-black dark:border-white absolute bottom-[10%] w-[5vmin] aspect-square border-b-[0.5vmin] border-r-[0.5vmin] rotate-45" />
+          <div class="absolute bottom-[10%] aspect-square w-[5vmin] rotate-45 border-b-[0.5vmin] border-r-[0.5vmin] border-black dark:border-white" />
         }
       />
 
@@ -51,13 +51,14 @@ export default function () {
         description="I'll upload media of those. Soon. Maybe. Perhaps."
       />
 
-      <div class="size-full p-48 flex flex-col items-center justify-center text-center text-xl">
+      <div class="flex size-full flex-col items-center justify-center p-48 text-center text-xl">
         <p>
           Find the source code of this website on my{" "}
           <a href="https://github.com/Anninzy/annin-site">Github repo</a>.
         </p>
         <p>
-          You can find the source code of my other <s>abandoned</s> projects on{" "}
+          You can find the source code of my other <s>abandoned</s> projects on
+          {" "}
           <a href="https://github.com/Anninzy">Github</a> as well.
         </p>
         <p>
@@ -65,13 +66,13 @@ export default function () {
           <a href="https://j5daigada.tumblr.com/post/619306719958450176/whoops-my-finger-slipped-and-i-drew-modeus">
             artwork
           </a>{" "}
-          by <a href="https://linktr.ee/j5daigada">daigada</a> (content
-          warning). Hopefully they don't mind.
+          by <a href="https://linktr.ee/j5daigada">daigada</a>{" "}
+          (content warning). Hopefully they don't mind.
         </p>
         <p>
           <a href="https://www.svgrepo.com/svg/491493/sun">Sun</a> &{" "}
-          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a> (fill
-          colour changed to #FFFFFF) SVGs from{" "}
+          <a href="https://www.svgrepo.com/svg/491454/moon">moon</a>{" "}
+          (fill colour changed to #FFFFFF) SVGs from{" "}
           <a href="https://www.svgrepo.com/">SVG Repo</a> under the{" "}
           <a href="https://creativecommons.org/licenses/by/4.0/">
             CC Attribution License
