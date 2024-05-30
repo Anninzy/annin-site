@@ -14,3 +14,14 @@ deno task start
 ```
 
 This will watch the project directory and restart as necessary.
+
+### Notes
+
+May need to run:
+
+```
+deno install npm:prettier
+deno install npm:prettier-plugin-tailwindcss
+```
+
+I put them in the import map, but I don't think it will be cached if it's never actually imported.
