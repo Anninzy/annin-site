@@ -9,10 +9,10 @@ export default function () {
         <meta name="description" content="Oh hi." />
       </Head>
 
-      <div class="flex size-full items-center justify-center">
+      <div class="flex size-full items-center justify-center p-2">
         <div class="flex flex-col gap-3">
-          <h1 class="text-8xl">anninzy#0000</h1>
-          <h2 class="text-4xl">Professional procrastinator.</h2>
+          <h1 class="text-5xl lg:text-8xl">anninzy#0000</h1>
+          <h2 class="text-xl lg:text-4xl">Professional procrastinator.</h2>
           <Clock />
         </div>
       </div>

@@ -10,10 +10,10 @@ interface PageProps {
 
 function Page({ heading, subheading, description, arrow }: PageProps) {
   return (
-    <div class="flex size-full flex-col items-center justify-center">
-      <h1 class="text-center font-major text-9xl">{heading}</h1>
-      <h2 class="text-center text-3xl">{subheading}</h2>
-      <p class="text-center text-xl">{description}</p>
+    <div class="flex size-full flex-col items-center justify-center p-2">
+      <h1 class="text-center font-major text-6xl lg:text-9xl">{heading}</h1>
+      <h2 class="text-center text-xl lg:text-3xl">{subheading}</h2>
+      <p class="text-center text-xs lg:text-xl">{description}</p>
       {arrow}
     </div>
   );
@@ -51,7 +51,7 @@ export default function () {
         description="I'll upload media of those. Soon. Maybe. Perhaps."
       />
 
-      <div class="flex size-full flex-col items-center justify-center p-48 text-center text-xl">
+      <div class="flex size-full flex-col items-center justify-center p-2 text-center text-xs lg:p-48 lg:text-xl">
         <p>
           Find the source code of this website on my{" "}
           <a href="https://github.com/Anninzy/annin-site">Github repo</a>.
