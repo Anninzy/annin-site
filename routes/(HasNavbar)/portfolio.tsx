@@ -35,7 +35,7 @@ export default function () {
         subheading="Under heavy construction."
         description="Written in TSX. Styled with Tailwind. Built with Fresh."
         arrow={
-          <div class="absolute bottom-[10%] aspect-square w-[5vmin] rotate-45 border-b-[0.5vmin] border-r-[0.5vmin] border-black dark:border-white" />
+          <div class="absolute bottom-[10%] aspect-square w-[2vmin] rotate-45 border-b-[0.5vmin] border-r-[0.5vmin] border-black dark:border-white" />
         }
       />
 
