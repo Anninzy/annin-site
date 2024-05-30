@@ -31,6 +31,7 @@
     "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
     "$std/": "https://deno.land/std@0.216.0/",
     "@catppuccin/tailwindcss": "npm:@catppuccin/tailwindcss",
+    "prettier": "npm:prettier",
     "prettier-plugin-tailwindcss": "npm:prettier-plugin-tailwindcss"
   },
   "compilerOptions": {
