@@ -3,7 +3,6 @@ import catppuccin from "@catppuccin/tailwindcss";
 
 export default {
   content: ["{routes,islands,components}/**/*.{ts,tsx}"],
-  darkMode: "selector",
   theme: {
     fontFamily: {
       major: ["Major Mono Display", "monospace"],
