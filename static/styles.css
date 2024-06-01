@@ -9,7 +9,7 @@
     font-family: "Space Mono", monospace;
   }
 
-  a {
+  a:not(:has(*)) {
     @apply font-bold underline;
   }
 
