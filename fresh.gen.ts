@@ -3,9 +3,9 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_HasNavbar_layout from "./routes/(HasNavbar)/_layout.tsx";
-import * as $_HasNavbar_apps from "./routes/(HasNavbar)/apps/index.tsx";
-import * as $_HasNavbar_blog from "./routes/(HasNavbar)/blog/index.tsx";
+import * as $_HasNavbar_apps_index from "./routes/(HasNavbar)/apps/index.tsx";
 import * as $_HasNavbar_blog_1 from "./routes/(HasNavbar)/blog/1.tsx";
+import * as $_HasNavbar_blog_index from "./routes/(HasNavbar)/blog/index.tsx";
 import * as $_HasNavbar_index from "./routes/(HasNavbar)/index.tsx";
 import * as $_HasNavbar_portfolio from "./routes/(HasNavbar)/portfolio.tsx";
 import * as $_404 from "./routes/_404.tsx";
@@ -16,9 +16,9 @@ import { type Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/(HasNavbar)/_layout.tsx": $_HasNavbar_layout,
-    "./routes/(HasNavbar)/apps.tsx": $_HasNavbar_apps,
-    "./routes/(HasNavbar)/blog.tsx": $_HasNavbar_blog,
+    "./routes/(HasNavbar)/apps/index.tsx": $_HasNavbar_apps_index,
     "./routes/(HasNavbar)/blog/1.tsx": $_HasNavbar_blog_1,
+    "./routes/(HasNavbar)/blog/index.tsx": $_HasNavbar_blog_index,
     "./routes/(HasNavbar)/index.tsx": $_HasNavbar_index,
     "./routes/(HasNavbar)/portfolio.tsx": $_HasNavbar_portfolio,
     "./routes/_404.tsx": $_404,
