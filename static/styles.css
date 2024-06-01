@@ -12,6 +12,14 @@
   a {
     @apply font-bold underline;
   }
+
+  img {
+    display: none;
+  }
+
+  img[src] {
+    display: block;
+  }
 }
 
 #navbar-list a {

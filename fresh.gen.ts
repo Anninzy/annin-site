@@ -3,8 +3,8 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_HasNavbar_layout from "./routes/(HasNavbar)/_layout.tsx";
-import * as $_HasNavbar_apps from "./routes/(HasNavbar)/apps.tsx";
-import * as $_HasNavbar_blog from "./routes/(HasNavbar)/blog.tsx";
+import * as $_HasNavbar_apps from "./routes/(HasNavbar)/apps/index.tsx";
+import * as $_HasNavbar_blog from "./routes/(HasNavbar)/blog/index.tsx";
 import * as $_HasNavbar_blog_1 from "./routes/(HasNavbar)/blog/1.tsx";
 import * as $_HasNavbar_index from "./routes/(HasNavbar)/index.tsx";
 import * as $_HasNavbar_portfolio from "./routes/(HasNavbar)/portfolio.tsx";

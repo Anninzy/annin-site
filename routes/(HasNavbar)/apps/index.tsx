@@ -1,0 +1,57 @@
+import { Head } from "$fresh/runtime.ts";
+
+interface ButtonProps {
+  href?: string;
+  image?: string;
+}
+
+function AppButton({ href, image }: ButtonProps) {
+  return (
+    <div class="h-48 w-96 overflow-clip rounded-3xl bg-surface1" href={href}>
+      <a href="/apps/test">
+        <img class="size-full object-cover" src={image} />
+      </a>
+    </div>
+  );
+}
+
+export default function () {
+  return (
+    <>
+      <Head>
+        <title>Apps</title>
+        <meta name="description" content="A collection of boring web apps." />
+      </Head>
+
+      <div class="my-24 flex h-min w-full flex-wrap content-start justify-center gap-6 px-[25%] pt-12">
+        <AppButton
+          href="/404"
+          image="https://images.unsplash.com/photo-1621839673705-6617adf9e890"
+        />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+        <AppButton />
+      </div>
+    </>
+  );
+}
