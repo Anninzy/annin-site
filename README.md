@@ -15,6 +15,10 @@ deno task start
 
 This will watch the project directory and restart as necessary.
 
+### TODO
+
+- [] May want to switch to % instead of REM for sizing. It's getting annoying needing to specify sizes for mobile and desktop seperately.
+
 ### Notes
 
 May need to run:
