@@ -5,17 +5,17 @@ interface ButtonProps {
   image?: string;
 }
 
-function AppButton({ href, image }: ButtonProps) {
-  return (
-    <div class="h-48 w-96 overflow-clip rounded-3xl bg-surface1" href={href}>
-      <a href="/apps/test">
-        <img class="size-full object-cover" src={image} />
-      </a>
-    </div>
-  );
-}
-
 export default function () {
+  function AppButton({ href, image }: ButtonProps) {
+    return (
+      <div class="h-48 w-96 overflow-clip rounded-3xl bg-surface1" href={href}>
+        <a href="/apps/test">
+          <img class="size-full object-cover" src={image} />
+        </a>
+      </div>
+    );
+  }
+
   return (
     <>
       <Head>
