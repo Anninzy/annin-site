@@ -11,7 +11,7 @@ export default function () {
       <a href={href}>
         <div class="h-[24rem] w-[12rem] rounded-xl bg-surface0 lg:h-[48rem] lg:w-[56rem]">
           <div class="h-2/3 w-full overflow-clip rounded-t-xl bg-surface1 ">
-            <img class="size-full object-cover" src={image} />
+            <img class="size-full object-cover" src={image} alt="" />
           </div>
           <div class="p-6">
             <h1 class="text-xl lg:text-6xl">[Title]</h1>

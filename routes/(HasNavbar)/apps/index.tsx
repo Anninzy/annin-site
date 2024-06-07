@@ -10,7 +10,7 @@ export default function () {
     return (
       <div class="h-48 w-96 overflow-clip rounded-3xl bg-surface1" href={href}>
         <a href="/apps/test">
-          <img class="size-full object-cover" src={image} />
+          <img class="size-full object-cover" src={image} alt="" />
         </a>
       </div>
     );
