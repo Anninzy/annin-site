@@ -4,6 +4,7 @@
 
 import * as $_HasNavbar_layout from "./routes/(HasNavbar)/_layout.tsx";
 import * as $_HasNavbar_apps_index from "./routes/(HasNavbar)/apps/index.tsx";
+import * as $_HasNavbar_apps_ttt from "./routes/(HasNavbar)/apps/ttt.tsx";
 import * as $_HasNavbar_blog_1 from "./routes/(HasNavbar)/blog/1.tsx";
 import * as $_HasNavbar_blog_index from "./routes/(HasNavbar)/blog/index.tsx";
 import * as $_HasNavbar_index from "./routes/(HasNavbar)/index.tsx";
@@ -17,6 +18,7 @@ const manifest = {
   routes: {
     "./routes/(HasNavbar)/_layout.tsx": $_HasNavbar_layout,
     "./routes/(HasNavbar)/apps/index.tsx": $_HasNavbar_apps_index,
+    "./routes/(HasNavbar)/apps/ttt.tsx": $_HasNavbar_apps_ttt,
     "./routes/(HasNavbar)/blog/1.tsx": $_HasNavbar_blog_1,
     "./routes/(HasNavbar)/blog/index.tsx": $_HasNavbar_blog_index,
     "./routes/(HasNavbar)/index.tsx": $_HasNavbar_index,
